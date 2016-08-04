@@ -7,7 +7,7 @@ print()
 
 the_number = random.randint(0, 100)
 guess = -1
-name = input('Jugador Cual es tu nombreñ?')
+name = input('Jugador Cual es tu nombre?')
 
 while guess != the_number:
     guess_text = input('Adivina el numero entre 0 and 100: ')
