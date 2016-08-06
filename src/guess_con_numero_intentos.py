@@ -13,10 +13,9 @@ while True:
 		break
 
 while guess != the_number:
-	times = times + 1
+    times = times + 1
     guess_text = input('Adivina el numero entre 0 and 100: ')
     guess = int(guess_text)
-
     if guess < the_number:
         # print('Your guess of ' + guess + ' was too LOW.')
         print('Sorry {}, tu eleccion de {} fue muy BAJA.'.format(name, guess))
@@ -25,5 +24,4 @@ while guess != the_number:
     else:
         print('Excelente trabajo {}, Tu ganas, era el {}!'.format(name, guess))
         print('Número de intentos: {}'.format(times))
-
 print('Fin.')
