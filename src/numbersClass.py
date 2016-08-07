@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-#
 class NumberContainers(object):
-	numbers = []
-
 	def __init__(self):
 		self.numbers = []
 	
@@ -37,4 +35,3 @@ while True:
 print "El mayor es  {}".format(misNumeros.mayor())
 print "La sumatoria es  {}".format(misNumeros.sumatoria())
 print "El promedio es {:5.2f}".format(misNumeros.promedio())
-		
