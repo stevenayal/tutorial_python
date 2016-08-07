@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-#
 class Dog():  # Definición de clase
-	kind = 'PUG'
+	color = 'Gris'
 	def __init__(self, name):
 		self.name = name
 
@@ -18,7 +18,7 @@ class Dog():  # Definición de clase
 perro1 = Dog('Doqui')
 perro2 = Dog('Firulaes')
 perro2.bark();
-print perro2.kind
-perro1.kind = 'Doberman'
+print perro2.color
+perro1.color = 'Negro'
 perro1.bark();
-print 'Raza instancia {}, Raza Clase {}'.format(perro1.kind, Dog.kind)
+print 'Color instancia {}, Color Clase {}'.format(perro1.color, Dog.color)
