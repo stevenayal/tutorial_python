@@ -18,21 +18,23 @@ class NumberContainers(object):
 	def sumatoria(self):
 		resultado = 0
 		for n in self.numbers:
-			resultado += Int(n)
+			resultado += n
 		return resultado
 
 	def promedio(self):
 		resultado = 0
-		for n in self.numbers:
-			resultado += Int(n)
+		if len(self.numbers):
+			resultado = float(self.sumatoria()) / len(self.numbers)
 		return resultado
 
 misNumeros = NumberContainers()
-misNumeros.agregar(5)
-misNumeros.agregar(1)
-misNumeros.agregar(50)
-misNumeros.agregar(100)
-misNumeros.agregar(104)
-misNumeros.agregar(20)
+while True:
+	n = input('Ingrese el número (-1 salir): ')
+	if(n == -1):
+		break;
+	misNumeros.agregar(n)
+
 print "El mayor es  {}".format(misNumeros.mayor())
+print "La sumatoria es  {}".format(misNumeros.sumatoria())
+print "El promedio es {:5.2f}".format(misNumeros.promedio())
 		
