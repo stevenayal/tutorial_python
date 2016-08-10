@@ -4,19 +4,19 @@ def print_header():
     print('-----------------------------------')
     print('        Cumpleaños')
     print('-----------------------------------')
-    print()
+    print('')
 
 def get_birthday_from_user():
     print('Dime tu fecha de nacimiento: ')
     year = int(input('Año [YYYY]: '))
     month = int(input('Mes [MM]: '))
     day = int(input('Dia [DD]: '))
-    birthday = datetime.datetime(year, month, day)
+    birthday = datetime.date(year, month, day)
     return birthday
 
 def compute_days_between_dates(original_date, now):
     date1 = now
-    date2 = datetime.datetime(now.year, original_date.month, original_date.day)
+    date2 = datetime.date(now.year, original_date.month, original_date.day)
     dt = date1 - date2
     days = int(dt.total_seconds() / 60 / 60 / 24)
     return days
@@ -32,8 +32,7 @@ def print_birthday_information(days):
 def main():
     print_header()
     bday = get_birthday_from_user()
-    now = datetime.datetime.now()
+    now = datetime.date.today()
     number_of_days = compute_days_between_dates(bday, now)
     print_birthday_information(number_of_days)
-
 main()
