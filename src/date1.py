@@ -18,4 +18,5 @@ print "Mismo dia de la fecha inicial"
 fecha_final = fecha_final.replace(day=fecha_inicial.day)
 print 'Nueva fecha final:', fecha_final
 print 'Número de día en la semana: {}  (0 = Lunes 6 = Domingo) '.format(fecha_final.weekday())
-print 'Formato ISO(yyyy-mm-dd): {}'.format(fecha_final.strftime("%Y.%m.%d"))
+print 'Formato Personalizado(yyyy-mm-dd): {}'.format(fecha_final.strftime("%Y.%m.%d"))
+print 'Formato ISO(mm-dd-yyyy): {}'.format(fecha_final.strftime("%Y.%m.%d"))
